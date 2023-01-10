@@ -12,3 +12,13 @@ For this project I was working with the [CIFAR100](https://www.cs.toronto.edu/~k
 The model consists of series of convolutional, normalization and pooling layers. The outlined architechure is described below.
 
 ![archit](./images/archit.JPG)
+
+## Performance Overview
+
+Fully trained model has reached 92% accuracy. The improvements in performance was achieved through
+- Data normalization: where normalizing input data makes training easier and more robust
+- Data augmentation: By attempting different image transforms provied our model more variations of the images for our model to learn from. The augmentation that was attemptend was RandomHorizontalFlip and RandomCrop.
+- Deeper network: deeper network have increased the model capacity there by improved it accuracy. With that being said there was a rist of overfitting. 
+- Normalization layers: the normalization layer helped to reduce the posibility for overfitting and improve training of the model. 
+
+I should note that this model was trained from scratch. For model selection I also trained a classifier using transfer learning using resnet18. The model using transfer learning has achieved 94% accuracy. 
